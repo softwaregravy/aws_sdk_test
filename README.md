@@ -20,13 +20,13 @@ Aws.config.update({
 S3_BUCKET = Aws::S3::Resource.new.bucket(ENV['S3_BUCKET'])
 ```
 Start up the console
-S3_BUCKET=XXX AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX rails c
+`S3_BUCKET=XXX AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX rails c`
 everything is fine
 
 Update gemfile:
 `gem 'aws-sdk', '~> 3'`
 `bundle install`
 Start up the console
-S3_BUCKET=XXX AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX rails c
+`S3_BUCKET=XXX AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX rails c`
 
 Failure
